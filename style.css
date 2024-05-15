@@ -1,9 +1,30 @@
-.body{
-background-color: pink;
+@font-face {
+    font-family: 'Futura';
+    src: url('path/to/FUTURA76BOLDITALIC.TTF') format('truetype');
+  }
 
+body{
+background-color: pink;
+overflow: hidden;
 }
 
 .MainContainer{
-    background-color: pink;
+display:flex;
+flex-direction: column;
+}
 
+.PrieText{
+color:white;
+font-size: 25rem;
+font-family: 'Futura', sans-serif;
+display:flex;
+justify-content: flex-end;
+}
+
+.EtoText{
+    color:white;
+    font-size: 25rem;
+    font-family: 'Futura', sans-serif;
+    display:flex;
+justify-content: flex-start;
 }
