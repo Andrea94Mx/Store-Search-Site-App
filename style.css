@@ -79,6 +79,13 @@ height: 100%;
 
 }
 
+.Search-Results-Container{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+grid-gap: 5px;
+
+}
+
 @media (min-width: 760px) {
     .EtoText {
         bottom: 1%;
