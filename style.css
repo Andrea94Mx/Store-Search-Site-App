@@ -112,3 +112,30 @@ grid-gap: 5px;
     }
 }
 
+/* Product-Gen-Page CSS*/
+.MainProductInputContainer{
+    display : flex;
+    flex-direction: column;
+justify-content: center;
+}
+
+.inputContainer{
+display : flex;
+flex-direction: column;
+font-family: 'Futura';
+align-items: center;
+}
+
+.variousInputsContainer{
+    text-align:left;
+
+}
+
+
+.Input{
+height: 40px;
+width: 300px;
+background: rgba(255, 255, 255, 0.5);
+border: none;
+
+}
