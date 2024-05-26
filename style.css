@@ -112,6 +112,22 @@ grid-gap: 5px;
     }
 }
 
+
+/* Navigation Bar CSS*/
+.NavBarContainer{
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
+
+.NavBarLogo{
+height: 50px;
+}
+
+
+
+
 /* Product-Gen-Page CSS*/
 .MainProductInputContainer{
     display : flex;
