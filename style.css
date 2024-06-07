@@ -15,13 +15,17 @@ overflow: hidden;
 .user-cards{
 display: grid;
 grid-template-columns: 1fr;
-gap:30px;
-
+gap:5px;
+width: 405px;
+margin-top: 4px;
 }
 
 .card{
-    border: solid 2px black;
-
+background-color: rgba(255, 255, 255, 0.5);
+padding-top: 10px;
+padding-bottom: 10px;
+padding-left: 15px;
+border-radius: 50px;
 }
 
 .SearchInput{
@@ -30,7 +34,9 @@ width:350px;
 height:50px;
 border: none;
 background-color: rgba(255, 255, 255, 0.5);
-
+border-bottom-left-radius: 100px;
+    border-top-left-radius: 100px;
+    padding-left: 25px;
 }
 
 .searchArea{
@@ -48,6 +54,8 @@ background-color: rgba(255, 255, 255, 0.5);
     border: none;
     background-color: rgba(255, 255, 255, 0.5);
     cursor: pointer;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
 }
 
 .PrieText{
