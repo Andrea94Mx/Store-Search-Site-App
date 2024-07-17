@@ -18,6 +18,7 @@ grid-template-columns: 1fr;
 gap:5px;
 width: 405px;
 margin-top: 4px;
+
 }
 
 .card{
@@ -201,3 +202,7 @@ input[type="file"] {
     display: none;
   }
   
+
+  .hide {
+    display: none;
+  }
