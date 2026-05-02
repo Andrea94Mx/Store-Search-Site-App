@@ -30,22 +30,22 @@ searchBar.addEventListener("input", (e) => {
 
 
 
-fetch("https://jsonplaceholder.typicode.com/users")
+fetch("https://jsonfakery.com/products ")
   .then((res) => res.json())
   .then((data) => {
-    users = data.map((user) => {
+    users = data.slice(0,5).map((product) => {
       const card = infoCard.content.cloneNode(true).children[0];
       const Title = card.querySelector("[data-title]");
       const Brand = card.querySelector("[data-brand]");
       const Description = card.querySelector("[data-description]");
-      Title.textContent = user.username;
-      Brand.textContent = user.company.name;
-      Description.textContent = user.company.bs;
+      Title.textContent = product.name;
+      Brand.textContent = product.manufacturer;
+      Description.textContent = product.description;
       infoCardContainer.append(card);
       return {
-        name: user.username,
-        brand: user.company.name,
-        description: user.company.bs,
+        name: product.name,
+        brand: product.manufacturer,
+        description: product.description,
         element: card,
       };
     });
@@ -55,3 +55,15 @@ fetch("https://jsonplaceholder.typicode.com/users")
         infoCardContainer.classList.add("hide");
       }
     });
+
+    function clickoff(){
+      document.body.addEventListener('click', () =>{
+      infoCardContainer.classList.add("hide");
+
+      } )
+
+    } 
+
+
+
+    clickoff()
